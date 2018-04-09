@@ -7,17 +7,6 @@ import style from './sass/style.scss';
 Vue.config.productionTip = false;
 
 
-
-
-
-
-
-
-
-
-
-
-
 // new Vue({
 //   router,
 //   render: h => h(Root)
