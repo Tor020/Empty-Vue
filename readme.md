@@ -27,3 +27,7 @@ for webpack options list [here](https://github.com/vuejs/vue-cli/blob/dev/docs/c
 - [Vue-cli commands](https://github.com/vuejs/vue-cli/blob/dev/docs/cli.md)
 - Seems to be some weird way of passing options to webpack with [vue-cli](https://github.com/vuejs/vue-cli/blob/dev/docs/webpack.md#inspecting-the-projects-webpack-config) 
 
+#### Decent Vue Component example
+
+ [tutorial page](https://frontstuff.io/build-your-first-vue-js-component)
+ [code-example](https://codesandbox.io/s/38k1y8x375)
