@@ -1,130 +1,70 @@
 <template lang="pug">
+div.container
 
-
-.targets
-  div.js-target
-    h1 Javascript Target
-    span.big(@click) 'js-target'
-
-  div.root
-    h1 Root Target
-    span.big 'root'
-
-  div.counter1
-    h1 Counter Target
-    span.big 'counter1'
- 
-  div.counter2
-    h1 Counter Target
-    span.big 'counter2'
- 
-  div.counter3
-    h1 Counter Target
-    span.big 'counter3'
- 
-  div.counter4
-    h1 Counter Target
-    span.big 'counter4'
-
-  //- #syntaxExamples.syntaxExamples
-  //-   div.classOne.classTwo
-  //-     | text inside a div with 'classOne' and 'classTwo'
-
+  div.interior.one
+  div.interior.two
+  div.interior.three
+  div.interior.four
+  div.interior.five
+  
 </template>
 
 <script>
 export default {
-    //- components: { Icon },
 
-    //- props: {
-    //-   grade: {
-    //-     type: Number,
-    //-     required: true
-    //-   },
-    //-   maxStars: {
-    //-     type: Number,
-    //-     default: 5
-    //-   },
-    //-   hasCounter: {
-    //-     type: Boolean,
-    //-     default: true
-    //-   }
-    //- },
 
-    //-   data() {
-    //-     return {
-    //-       stars: this.grade
-    //-     }
-    //-   },
+       data() {
+         return {
+           
+         }
+       },
 
-    //-   methods: {
-    //-     rate(star) {
-    //-       if (
-    //-         typeof star === 'number' &&
-    //-         star <= this.maxStars &&
-    //-         star >= 0
-    //-       )
-    //-         this.stars = this.stars === star ? star - 1 : star
-    //-     }
-    //-   }
+       methods: {
+       
+         ಠ(){
+           
+       }
      }
+}
 </script>
 
 <style lang="scss">
-    body{
-      text-align:center;
-    }
-    .targets {
-      display : grid;
+ body{
+    margin:0;
+}
+.container{
+  display:grid;
+  // grid-template-columns : 12% auto 400px 12%;         
+  grid-template-columns : 20vw 20vw 20vw 20vw 20vw;       
+  grid-template-rows : 20vh 20vh 20vh 20vh 20vh ;  //5 columns y axis
 
-      grid-template-areas : 
-      "root root  js-target js-target  "
-      "counter1  counter1      counter2     counter2  "
-      "counter3  counter3      counter4     counter4  ";
-      grid-template-columns : [col-1] 25% [col-2] 25% [col-3] 25% [col-4] 25%;
-      grid-template-rows : 35vh 35vh 35vh;
-
-
-      .big {
-        font-size : 1.4rem;
-        display : block;
-        margin-top : 1rem;
-        width:20rem;
-        margin: auto;
-        margin-top:1rem;
-        border-radius:.5rem;
-        box-shadow:
-        3px 0px 6px 0px rgba(0,0,0,0.4), 
-        -3px 0px 6px 0px rgba(0,0,0,0.4);
-      
-      }
-    }
-
-    .root {
-      grid-area : root;
-    }
-
-    .js-target {
-      grid-area : js-target;
-    }
-
-    .counter1{
-      grid-area : counter1;
-
-    }
-
-    .counter2{
-      grid-area : counter2;
-
-    }
-
-    .counter3{
-      grid-area : counter3;
-
-    }
-
-    .counter4{
-      grid-area : counter4;
-
-    }
+}
+.interior{
+  // background-color:rgba(41, 97, 188,0.3)
+}
+.one{
+  background-color:rgba(188, 41, 53, 0.3);
+  grid-column: 1/2;  //x axis      
+  grid-row: 1/2;     //y axis
+}
+.two{
+  background-color:rgba(41, 188, 41, 0.3);
+  grid-column: 2/3;  //x axis
+  grid-row: 2/3;     //y axis
+}
+.three{
+  background-color:rgba(166, 188, 41, 0.3);
+  grid-column: 3/4;  //x axis
+  grid-row: 3/4;     //y axis 
+}
+.four{
+  background-color:rgba(188, 41, 156, 0.3);
+  grid-column: 4/5;  //x axis
+  grid-row: 4/5;     //y axis 
+}
+.five{
+  background-color:rgba(41, 97, 188,0.3);
+  grid-column: 5/6;  //x axis
+  grid-row: 5/6;     //y axis 
+}
 </style>
